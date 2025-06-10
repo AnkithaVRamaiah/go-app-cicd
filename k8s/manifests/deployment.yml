@@ -1,0 +1,22 @@
+# This is a sample deployment manifest file for a simple web application.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: go-app-cicd
+  labels:
+    app: go-app-cicd
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: go-app-cicd
+  template:
+    metadata:
+      labels:
+        app: go-app-cicd
+    spec:
+      containers:
+      - name: go-app-cicd
+        image: ankithav/go-app-cicd:v1
+        ports:
+        - containerPort: 8080

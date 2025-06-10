@@ -25,8 +25,9 @@ RUN go build -o main .
 # We will use a distroless image to run the application
 FROM gcr.io/distroless/base
 
+WORKDIR /
 # Copy the binary from the previous stage
-COPY --from=base /app/main .
+COPY --from=base /app/main ./
 
 # Copy the static files from the previous stage
 COPY --from=base /app/static ./static
