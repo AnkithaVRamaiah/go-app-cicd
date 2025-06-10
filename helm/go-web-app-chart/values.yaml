@@ -8,7 +8,7 @@ image:
   repository: ankithav/go-app-cicd
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "15558703095"
+  tag: "15558887778"
 
 ingress:
   enabled: false
