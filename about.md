@@ -68,10 +68,3 @@ This project automates the end-to-end DevOps pipeline for a simple **Go web appl
 
 * All app configurations, manifests, and pipeline definitions are version-controlled.
 
----
-
-
-
----
-
-Let me know if you’d like me to write the **HTML version of this for your portfolio**, or a **GitHub README** version — I can generate both quickly!
